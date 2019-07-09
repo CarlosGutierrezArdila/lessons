@@ -4,10 +4,10 @@ import './index.css';
 import 'bootstrap/dist/css/bootstrap.css';
 
 import './global.css'
-import BadgeNew from './pages/BadgeNew';
 import * as serviceWorker from './serviceWorker';
+import App from './components/App';
 
-ReactDOM.render(<BadgeNew />, document.getElementById('root'));
+ReactDOM.render(<App />, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.

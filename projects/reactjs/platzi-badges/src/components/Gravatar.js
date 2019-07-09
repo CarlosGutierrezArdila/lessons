@@ -1,0 +1,8 @@
+import React from 'react';
+import md5 from 'md5';
+
+function Gravatar(props) {
+    return <img className={props.className} src={`https://www.gravatar.com/avatar/${md5(props.email)}?d=identicon`} alt="Avatar"/>;
+}
+
+export default Gravatar;
