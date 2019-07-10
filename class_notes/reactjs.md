@@ -55,9 +55,33 @@ Nos da las herramientas para poder hacer SPA fácilmente. Usaremos 4 componentes
 - Switch: Dentro de Switch solamente van elementos de Route. Switch se asegura que solamente un Route se renderize.
 - Link: Toma el lugar del elemento <a>, evita que se recargue la página completamente y actualiza la URL.
 
-##### Llamadas a un API
+### Llamadas a un API
 Las llamadas a una API siguen un patrón similar siempre que las hacemos, cada llamada consta de tres estados:
 - *Loading:* cuando la petición se envía y estamos esperando.
 - *Error:* se debe dejar un mensaje para el usuario para arreglar el error o volver a intentarlo.
 - *Data:* los datos nos pueden llegar de dos formas, o en error o con los datos requeridos.
+
+### Polling 
+Consiste en que cada cierto tiempo que es definido por nosotros se buscan los datos y se actualizan automáticamente. Esto se hará constantemente hasta que el usuario se vaya de la página.
+
+### Portales
+
+Hay momentos en los que queremos renderizar un modal, un tooltip, etc. Esto puede volverse algo complicado ya sea por la presencia de un z-index o un overflow hidden.
+
+En estos casos lo ideal será renderizar en un nodo completamente aparte y para esto React tiene una herramienta llamada Portales que funcionan parecido a ReactDOM.render; se les dice qué se desea renderizar y dónde, con la diferencia de que ese dónde puede ser fuera de la aplicación.
+
+```javascript
+{ReactDom.createPortal(que, donde)}
+```
+### Hooks
+Las funciones no tienen un estado propio que manejar como ciclos de vida a los que deben suscribirse, mientras tanto las clases sí cuentan con ello.
+
+React tiene un feature llamado Hooks que permite que las funciones también tengan features que solamente tienen las clases.
+
+*Hooks:* Permiten a los componentes funcionales tener características que solo las clases tienen:
+- *useState:* Para manejo de estado.
+- *useEffect:* Para suscribir el componente a su ciclo de vida.
+- useReducer:* Ejecutar un efecto basado en una acción.
+*Custom Hooks:* Usamos los hooks fundamentales para crear nuevos hooks custom. Estos hooks irán en su propia función y su nombre comenzará con la palabra use. Otra de sus características es que no pueden ser ejecutados condicionalmente (if).
+- *useState:* regresa un arreglo de dos argumentos.
 
