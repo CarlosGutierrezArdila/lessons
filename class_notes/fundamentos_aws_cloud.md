@@ -166,3 +166,11 @@ Creación de certificados SSL, permite crear nuevos certificados o importar algu
 ### GuardDuty 
 Auditoria constante de todos los intentos de conexiones que tienen los equipos.
 Muestra datos sobre los ataques.
+
+### Rekognition
+Servicio basado en inteligencia artificial que identifica patrones en imagenes, permite:
+- Moderación de imagenes.
+- Analisis facial.
+- Reconocimiento de celebridades.
+- Comparación de rostros.
+- Texto en imagenes.
