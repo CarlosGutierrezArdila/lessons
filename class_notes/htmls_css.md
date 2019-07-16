@@ -192,5 +192,5 @@ La forma de añadir código CSS que se ejecute para tamaños de pantalla especí
 ```
 
 ### Libreria vs Framework
-- *Framework:* Marco de trabajo.
-- *Libreria:* Conjunto de procedimientos y funciones.
+- **Framework:** Marco de trabajo.
+- **Libreria:** Conjunto de procedimientos y funciones.

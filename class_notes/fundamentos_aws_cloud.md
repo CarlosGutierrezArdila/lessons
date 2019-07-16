@@ -123,17 +123,17 @@ Muestra diversos eventos relacionados con la infraestructura o servidores, para 
 Herramienta de auditoria que permite ver quien o que hizo en la cuenta de AWS.
 
 ### EC2
-- *Updates:* Manuales
-- *Instancias:* Maquinas virtualizadas.
-- *Seguridad:* Generación de llaves únicas.
-- *Espacio:* Espacio en disco virtualmente infinito.
-- *Redundancia:* Copias de seguridad en diversas regiones.
-- *Firewall:* Desde donde y por donde se puede conectar a la máquina.
-- *Direcciones IP Estaticas:* Comprar ip pública estatica.
-- *Respaldos:* Respaldar toda la máquina.
-- *Escalable:* Incrementar o decrementar los recursos de la máquina.
-- *Migración de snapshots:* Coppiar snapshots a otras regiones.
-- *Grupos de seguridad:* Accesos a la máquina por direcciones.
+- **Updates:** Manuales
+- **Instancias:** Maquinas virtualizadas.
+- **Seguridad:** Generación de llaves únicas.
+- **Espacio:** Espacio en disco virtualmente infinito.
+- **Redundancia:** Copias de seguridad en diversas regiones.
+- **Firewall:** Desde donde y por donde se puede conectar a la máquina.
+- **Direcciones IP Estaticas:** Comprar ip pública estatica.
+- **Respaldos:** Respaldar toda la máquina.
+- **Escalable:** Incrementar o decrementar los recursos de la máquina.
+- **Migración de snapshots:** Coppiar snapshots a otras regiones.
+- **Grupos de seguridad:** Accesos a la máquina por direcciones.
 
 Permisos de la pem chmod +600
 
@@ -143,17 +143,17 @@ Sin necesidad de servidores
 ### Lambda 
 Relacionado al concepto de serverless permite ejecutar código sin necesidad de que corra un servidor, es administrado por amazon.
 
-Siempre se debe definir un `lambda_handler` o *handler*.
+Siempre se debe definir un `lambda_handler` o **handler**.
 
 ##### Limites
-- *Memoria:* Mínima de 128MB, máxima 3000MB con incrementos de 64MB.
-- *Límites de ejecución y espacio:* Puedes correr tu aplicación hasta 300 segundos y tienes un /tmp limitado a 512MB.
-- *Ejecución paralela:* Esta limitada a 1000 ejecuciones concurrentes (a un mismo tiempo), no tiene límite en ejecuciones secuenciales (una detrás de otra).
+- **Memoria:** Mínima de 128MB, máxima 3000MB con incrementos de 64MB.
+- **Límites de ejecución y espacio:** Puedes correr tu aplicación hasta 300 segundos y tienes un /tmp limitado a 512MB.
+- **Ejecución paralela:** Esta limitada a 1000 ejecuciones concurrentes (a un mismo tiempo), no tiene límite en ejecuciones secuenciales (una detrás de otra).
 
 ##### Ventajas de Lambda:
-- *Seguridad:* Al ser una infraestructura compartida, no tienes que preocuparte de seguridad: AWS maneja todo.
-- *Performance:* AWS está monitoreando constantemente la ejecución de tus funciones y se encarga de que siempre tenga el mejor performance.
-- *Código aislado:* Tu código, aún estando en una infraestructura compartida, corre en un ambiente virtual exclusivo, aislado de las demás ejecuciones lamba.
+- **Seguridad:** Al ser una infraestructura compartida, no tienes que preocuparte de seguridad: AWS maneja todo.
+- **Performance:** AWS está monitoreando constantemente la ejecución de tus funciones y se encarga de que siempre tenga el mejor performance.
+- **Código aislado:** Tu código, aún estando en una infraestructura compartida, corre en un ambiente virtual exclusivo, aislado de las demás ejecuciones lamba.
 
 
 ##### Lenguajes soportados
