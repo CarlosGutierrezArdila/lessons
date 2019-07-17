@@ -118,11 +118,31 @@ db.inventory.deleteMany({})
 
 # Tipos de datos 
 
-Strings: Nos sirven para guardar textos.
-Boolean: Información cierta o falsa (true y false).
-ObjectId: Utilizan el tiempo exacto en el que generamos la consulta para siempre generan IDs únicos. Existen en BSON pero no en JSON.
-Date: Nos sirven para guardar fechas y hacer operaciones de rangos entre ellas.
-Números: Doubles, Integers, Integers 64 bits y Decimals.
-Documentos Embebidos: Documentos dentro de otros documentos ({}).
-Arrays: Arreglos o listas de cualquier otro tipo de datos, incluso, de otras listas.
+- Strings: Nos sirven para guardar textos.
+- Boolean: Información cierta o falsa (true y false).
+- ObjectId: Utilizan el tiempo exacto en el que generamos la consulta para siempre generan IDs únicos. Existen en BSON pero no en JSON.
+- Date: Nos sirven para guardar fechas y hacer operaciones de rangos entre ellas.
+- Números: Doubles, Integers, Integers 64 bits y Decimals.
+- Documentos Embebidos: Documentos dentro de otros documentos ({}).
+- Arrays: Arreglos o listas de cualquier otro tipo de datos, incluso, de otras listas.
+
+# Operadores:
+
+## Operadores por elemento.
+- $exist: Documentos que cuentan con un campo específico.
+- $type: Documentos que cuentan con un campo de un tipo específico.
+## Operadores lógicos.
+- $and: Une queries con un and lógico.
+- $not: Invierte el efecto de un query.
+- $nor: Une queries con un nor lógico.
+- $or: Une queries con un or lógico.
+## Operadores de comparación en MongoDB.
+- $eq: Igual ‘=’.
+- $gt: Mayor ‘>’.
+- $gte: Mayor o igual ‘>=’.
+- $lt: Menor ‘<’.
+- $lte: Menor o igual ‘<=’.
+- $ne: Diferente ‘!=’.
+- $in: Valores dentro de un arreglo.
+- $nin: Valores que no están dentro de un arreglo.
 
