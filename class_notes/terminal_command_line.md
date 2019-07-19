@@ -161,16 +161,17 @@ Donde:
         - `w`: Write. **En octal 2**.
         - `x`: Execute. **En octal 1**.
     - Entonces en binario:
-        |   Binario |   Octal       | Gráfico       | Permisos                          |
-        |-----------|---------------|---------------|-----------------------------------|
-        |   000		|		0		|		---		| Sin permisos.                     |
-        |   001		|		1		|		--x		| Sólo permiso de ejecución.        |
-        |   010		|		2		|		-w-		| Sólo permiso de escritura.        |
-        |   011		|		3		|		-wx		| Permisos de escritura y ejecución.|
-        |   100		|		4		|		r--		| Sólo permiso de lectura.          |
-        |   101		|		5		|		r-x		| Permisos de lectura y ejecución.  |
-        |   110		|		6		|		rw-		| Permisos de lectura y escritura.  |
-        |   111		|		7		|		rwx		| Todos los permisos.               |
+    
+|   Binario |   Octal       | Gráfico       | Permisos                          |
+|-----------|---------------|---------------|-----------------------------------|
+|   000		|		0		|		---		| Sin permisos.                     |
+|   001		|		1		|		--x		| Sólo permiso de ejecución.        |
+|   010		|		2		|		-w-		| Sólo permiso de escritura.        |
+|   011		|		3		|		-wx		| Permisos de escritura y ejecución.|
+|   100		|		4		|		r--		| Sólo permiso de lectura.          |
+|   101		|		5		|		r-x		| Permisos de lectura y ejecución.  |
+|   110		|		6		|		rw-		| Permisos de lectura y escritura.  |
+|   111		|		7		|		rwx		| Todos los permisos.               |
 
 - Dueño del archivo.
 - Grupo al que pertenece el usuario.
