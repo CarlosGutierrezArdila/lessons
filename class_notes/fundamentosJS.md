@@ -91,7 +91,7 @@ var nombreCompleto = `${nombre} ${apellido.toUpperCase()}`
 ```
 # Numeros
 
-´´´javascript
+```javascript
 // RESUMEN DE LA CLASE: 'NUMEROS'
 // - Declaramos la existencia de la variable 'edad' cuyo valor definido es igual
 //   a 18
@@ -158,4 +158,14 @@ var persona = 2
 // - Si queremos saber cuantas pizzas debe comer cada persona, debemos realizar una
 //   division
 var cantidadDePorcionesPorPersona =pizza / persona
-´´´
+``` 
+# Objetos
+
+- cuidado con el this en las arrow functions, va a ser lo que este en el scope de afuera, window por defecto
+![image](https://user-images.githubusercontent.com/32855979/62418741-7e011480-b636-11e9-8eb1-6f88e639dfe9.png)
+
+## Herencia en prototipos
+
+- **herencia prototipal:**  sintaxis class y extends, simplificar asignacion de prototipos ES6+ 
+![image](https://user-images.githubusercontent.com/32855979/62418841-bbff3800-b638-11e9-8a93-acd1847f506a.png) 
+
