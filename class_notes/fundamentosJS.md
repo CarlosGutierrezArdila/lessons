@@ -169,3 +169,62 @@ var cantidadDePorcionesPorPersona =pizza / persona
 - **herencia prototipal:**  sintaxis class y extends, simplificar asignacion de prototipos ES6+ 
 ![image](https://user-images.githubusercontent.com/32855979/62418841-bbff3800-b638-11e9-8a93-acd1847f506a.png) 
 
+# Asincronismo
+
+- Se pueden pasar funciones como parametros, undefined, null, string vacio evaluado dentro de una condicion da false, un numero.string etc da true
+- event loop: existe la cola de tareas y la de proceso js puede hacer una sola cosa a la vez, pero delegar a traves de callbacks
+- tiempo en JS:  settimeout(fn, delay_ms) manda la funcion que recibe como parametro a la cola de tareas, que se ejecuta despues del proceso normal
+- **Callbacks:**  funciones que se llaman por parametro y se ejcutan cuendo se produce una respuesta de otra funcion
+- **Requests:** Al hacer requests no se sabe en que orden responderan, se inciain al mismo timepo pero cada rq puede tardar un tiempo en llegar
+- **Sincronizar:** la unica forma basica de sincronizar es con callbacks, pero se obtiene el problema del callback hell, que se ve de la siguiente manera:
+
+![image](https://user-images.githubusercontent.com/32855979/62432071-14930b80-b6f3-11e9-9132-a7105fbf2a57.png)
+
+- **Promesas:** valores que aun no se conocen, las promesas tienen 3 estados:
+  - pending
+  - fullfilled: .then(val=>....)
+  - rejected: .catch(err=>....)
+
+![image](https://user-images.githubusercontent.com/32855979/62432378-f5957900-b6f4-11e9-9920-ebc02a13875c.png)
+
+### Ejemplo:
+```javascript
+const API_URL = "https://swapi.co/api/";
+const PEOPLE_URL = "people/:id";
+const opts = { crossDomain: true };
+
+functionobtener_personaje(id) {
+	returnnew Promise((resolve, reject) => {
+		consturl = `${API_URL}${PEOPLE_URL.replace(":id", id)}`;
+		$.get(url, opts, function(data) {
+			resolve(data);
+		}).fail(() => reject(id));
+	});
+}
+
+functionon_error(id) {
+    console.log(`Sucedio un error al obtener el personaje ${id}`)
+}
+
+
+obtener_personaje(1)
+    .then(personaje => {console.log(`El personaje 1 es ${personaje.name}`)
+    return obtener_personaje(2)
+    })
+    .then(personaje => {console.log(`El personaje 2 es ${personaje.name}`)
+    return obtener_personaje(3)
+    })
+    .then(personaje => {console.log(`El personaje 3 es ${personaje.name}`)
+    return obtener_personaje(4)
+    })
+    .then(personaje => {console.log(`El personaje 4 es ${personaje.name}`)
+    return obtener_personaje(5)
+    })
+    .then(personaje => {console.log(`El personaje 5 es ${personaje.name}`)
+    return obtener_personaje(6)
+    })
+    .then(personaje => {console.log(`El personaje 6 es ${personaje.name}`)
+    })
+    .catch(on_error)`
+    ```
+ 
