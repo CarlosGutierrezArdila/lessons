@@ -225,6 +225,33 @@ obtener_personaje(1)
     })
     .then(personaje => {console.log(`El personaje 6 es ${personaje.name}`)
     })
-    .catch(on_error)`
-    ```
- 
+    .catch(on_error)
+ ```
+ - **Promesas encadenadas:** como en el ejemplo de arriba se retorna una promesa en cada resolve y se encadena con el .then, y el .catch() sirve para cualquier error en cualqiera de las promesas
+- **Multiples promesas en paralelo:** en este ejemplo podemos ver como se realiza un arreglo de promesas y se resuelven todas en paralelo, organizandolas 
+![image](https://user-images.githubusercontent.com/32855979/62433736-4b6d1f80-b6fb-11e9-8be8-485d2c78023d.png)
+- **Async await:** se marca la funcion como asincrona y el await espera a que se resuelvan las promesas se debe poner dentro de un bloque try-catch la parte asincrona
+```javascript
+//ejemplo de funcion async-await
+asyncfunctionobtenerPersonajes()
+{
+    var ids = [1,2,3,4,5,6,7]
+    var promesas = ids.map(id => obtenerPersonaje(id))
+    try {
+        var personajes = awaitPromise.all(promesas)
+        console.log(personajes)
+    }
+    catch (id)
+    {
+        onError(id)
+    }
+}
+
+obtenerPersonajes()
+```
+
+
+
+
+
+
