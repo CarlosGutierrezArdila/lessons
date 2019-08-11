@@ -250,6 +250,38 @@ asyncfunctionobtenerPersonajes()
 obtenerPersonajes()
 ```
 
+### Var let y const diferencias:
+
+- **var** es la forma mas antigua, buena practica declarar arriba, js la interpreta como si estuviera arriba de todos modos
+- **let:** el scope o alcance de la variable se reduce al bloque {} donde es utilizada y definida.
+- **const:** se comporta como let pero no se puede hacer mas de una signcion, es decir no se cambia el valor, los arreglos const no se pueden reasignar pero sus elementos se pueden cambiar
+- **se recomienda ya no utilizar var para evitar bugs**
+
+### Memoizacion:
+- permite ahorrar computo
+- definiendo this.cache dentro de funciones, ejemplo recursivo de factorial:
+- ![image](https://user-images.githubusercontent.com/32855979/62839769-e06c9d00-bc54-11e9-87ae-8aa191f4a071.png)
+
+### Closures:
+- funciones que recuerdan un estado cuendo fueron invocadas, para esto retornan otra funcion, por ejemplo:
+- ![image](https://user-images.githubusercontent.com/32855979/62839822-f169de00-bc55-11e9-8120-e3b250a4cbfa.png)
+### Estructuras de datos inmutables:
+- evitar efectos de lado (ej llamar a una funcion y que haga cambios en cosas por fuera de alla, algo que se debe evitar), por lo tanto evitar bugs
+- retorna un nuevo objeto: 
+- ![image](https://user-images.githubusercontent.com/32855979/62839882-f3806c80-bc56-11e9-9382-17fb81bc33a5.png)
+### Contexto y cambiar contexto en una funcion
+- contexto es quien es this
+- **funcion.bind(variable)** de una funcion sirve para atar el parametro al this de la funcion. no ejecuta la funcion, nos retorna una funcion con el contexto cambiado, sin tocar la funcion original.
+- **funcion.call(this, parametros)** llama la funcion en el momento
+- **funcion.apply(this, parametros)**
+### Punto y coma al final de la linea:
+- es opcional en JS
+- es innecesario despues de unas llaves
+- casos en los que se debe usar:
+	- cuando la siguiente linea empieza con un array [1,2,3]
+	- cuando la siguiente linea empieza con parentesis invertidos `${name} etc`
+	- despues de un return no debe haber un enter
+
 
 
 
