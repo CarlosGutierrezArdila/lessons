@@ -24,3 +24,20 @@
 - **Digest cycle:**   
 ![image](https://user-images.githubusercontent.com/32855979/62843430-5be34400-bc7f-11e9-8028-3b756930736a.png)  
 ![image](https://user-images.githubusercontent.com/32855979/62843648-0c9e1300-bc81-11e9-851b-e25028464ed1.png)
+
+- **data Binding:**
+
+  - 2 way : ng-model
+  - 1 way data: {{}}
+  - 1 time binding: {{::property}} **no hay watcher**, optimizar rendimiento para datos que no van a cambiar
+- ![image](https://user-images.githubusercontent.com/32855979/63530569-53cfa380-c4cc-11e9-9818-55405f4a6aee.png)
+- **ng-repeat:**
+  - indice se puede usar con $index
+  - ![image](https://user-images.githubusercontent.com/32855979/63530938-10c20000-c4cd-11e9-932f-64df87cb4895.png)
+  - se pueden filtar elementos con el filtro filter:
+  - ![image](https://user-images.githubusercontent.com/32855979/63531269-c725e500-c4cd-11e9-80cf-207a800b6c65.png)
+  **Herencia prototipal: controller as**
+- ![image](https://user-images.githubusercontent.com/32855979/63541169-23473400-c4e3-11e9-8136-c4bbfb30f210.png)
+- ![image](https://user-images.githubusercontent.com/32855979/63541250-55f12c80-c4e3-11e9-9dc7-918eeb62cecb.png)
+
+
