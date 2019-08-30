@@ -43,15 +43,20 @@ f.apply(this, [a,b,c])
 - se heredan los prototipos, se pueden ver con Object.getPrototypeOf() 
 - JS busca las propiedades en los prototipos padre
 - Object es el padre de todos los objetos de js, incluyendo funciones.
-
+# Funcionamiento de JS
 ## Parsers y Abstract Sintax Tree
 
+- ![image](https://user-images.githubusercontent.com/32855979/64047500-90d31000-cb34-11e9-82d4-e807af143be0.png) .
+- ![image](https://user-images.githubusercontent.com/32855979/64047695-1e166480-cb35-11e9-954f-409a9260d484.png) -
+- ![image](https://user-images.githubusercontent.com/32855979/64047792-66358700-cb35-11e9-85ac-baaf65428768.png) .
+## JS engine
+- tratar de que las funciones se ejecuten igual para que el optimizador las haga machine code y sean rapidas
+## Event loop
+- stack es organizado y heap es aleatorio 
+- ![image](https://user-images.githubusercontent.com/32855979/64048640-e361fb80-cb37-11e9-93b9-caf8b7cd3899.png)
+- pasar del task queue al stack
+- las promesas estan en la cola de microtareas y se les da preferencia.
 
-
-
-
-
-# Funcionamiento de JS
 # Fundam intermendios
 # Fundam Avanzados
 # APIS del DOM
