@@ -10,8 +10,46 @@ let define la fucnion para el block scope
 - las funciones de ejecucion inmediata evitan que lo que se defina adentro de ellas este disponible en el scope global:
 - ![image](https://user-images.githubusercontent.com/32855979/64040882-9d02a180-cb23-11e9-99d8-85ee35d442f3.png)
 - los closures permiten tener variables privadas
-![image](https://user-images.githubusercontent.com/32855979/64041281-b0fad300-cb24-11e9-9f70-bf8a4a1f74a9.png)
-- en el ejemplo del contador no se puede modificar la variable count, se logra que sea privada por medio del retorno de las funcioines y el aislamiento del scope
+- ![image](https://user-images.githubusercontent.com/32855979/64041281-b0fad300-cb24-11e9-9f70-bf8a4a1f74a9.png)
+- en el ejemplo del contador no se puede modificar la variable count, se logra que sea privada por medio del retorno de las funciones y el aislamiento del scope
+## This
+- **en el global scope:** this es window
+- **funcion:** es window excepto en el strict mode:
+```js
+'use strict';
+``` 
+- this es el que esta llamando un fragmento de codigo
+- **Dentro de class:** cuando se instancia con la palabra new se refiere a la instancia
+## Metodos call, apply y bind
+- this no se puede asignar directamente
+### call 
+- se le pasa el this por medio del metodo de la funcion, cualquier funcion tiene estos metodos 
+-  ![image](https://user-images.githubusercontent.com/32855979/64042643-f076ee80-cb27-11e9-9123-d0ab8c5d3d1a.png)
+### apply 
+- hace la misma funcion que call pero los argumentos son diferentes, los argumentos van en un arreglo:
+```js
+f.apply(this, [a,b,c])
+``` 
+### Bind 
+- construye una nueva funcion, con el this que se le pasa ya integrado
+
+## Prototype
+
+- todas las funciones tienen un .prototype que en principio es vacio
+- new saca cosas de prototype, es un atajo para object.create
+  - se usa this dentro de la funcion y el return this es implicito:
+
+## Herencia prototipal
+- se heredan los prototipos, se pueden ver con Object.getPrototypeOf() 
+- JS busca las propiedades en los prototipos padre
+- Object es el padre de todos los objetos de js, incluyendo funciones.
+
+## Parsers y Abstract Sintax Tree
+
+
+
+
+
 
 # Funcionamiento de JS
 # Fundam intermendios
