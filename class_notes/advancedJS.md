@@ -57,8 +57,37 @@ f.apply(this, [a,b,c])
 - pasar del task queue al stack
 - las promesas estan en la cola de microtareas y se les da preferencia.
 
-# Fundam intermendios
+# Fundamentos intermedios
+## promesas.
+- se pueden reemplazar por async await, por ejemplo:
+```js
+async function f() {
+data = await fetch(url) //promesa
+return data
+}
+```
+- toda funcion async retorna promesa
+- **Promise.all([promesas])** resuelve una arreglo de promesas, si una falla todas fallan.
+- **Promise.race([promesas])** devuelve la primera promesa que se resuelve.
+## getters y setters.
+- permite tener propiedades virtuales
+- palabras reservadas get y set
+- tener propiedades que no existen directamente, ejemplo un calculo
+
 # Fundam Avanzados
+## Proxy.
+- feature reciente de JS
+- palabra reservada proxy
+```js
+const b= new Proxy (target, handler)
+```
+- el proxy tiene muchas maneras de implementar interceptores
+## Generadores:
+- se declaran con un * despues del nombre de la funcion, se pueden parar y detener, mediante la palabra reservada **yield** y el metogo gen.next()
+- ![image](https://user-images.githubusercontent.com/32855979/64058171-d8758e00-cb6c-11e9-931b-cf3548917b39.png)
+- el yield puede recibir un parametro por medio del next
+- ![image](https://user-images.githubusercontent.com/32855979/64058231-d95aef80-cb6d-11e9-83e2-55d73ceb4180.png)
+ 
 # APIS del DOM
 # Typescript
 # Patrones de diseño
