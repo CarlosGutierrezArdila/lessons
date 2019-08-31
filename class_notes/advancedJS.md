@@ -89,5 +89,9 @@ const b= new Proxy (target, handler)
 - ![image](https://user-images.githubusercontent.com/32855979/64058231-d95aef80-cb6d-11e9-83e2-55d73ceb4180.png)
  
 # APIS del DOM
+## Fetch como cancelar peticiones
+- Abort controller permite cancelar un fetch con el metodo abort()
+## IntersectionObserver.
+- ![image](https://user-images.githubusercontent.com/32855979/64058451-e3cab880-cb70-11e9-8b83-74104d16b688.png)
 # Typescript
 # Patrones de diseño
