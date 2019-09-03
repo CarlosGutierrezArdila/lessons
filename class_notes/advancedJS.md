@@ -93,5 +93,15 @@ const b= new Proxy (target, handler)
 - Abort controller permite cancelar un fetch con el metodo abort()
 ## IntersectionObserver.
 - ![image](https://user-images.githubusercontent.com/32855979/64058451-e3cab880-cb70-11e9-8b83-74104d16b688.png)
+## VisibilityChange
+- saber si se esta o no en una pestaña del navegador. 
+- ![image](https://user-images.githubusercontent.com/32855979/64140400-ea07a180-cdc9-11e9-95e8-f657733fb883.png) .
+## Service workers
+- permiten guardar peticiones en cache por si se esta offline:
+### archivo principal:
+- ![image](https://user-images.githubusercontent.com/32855979/64141049-48358400-cdcc-11e9-8abf-e1d58cd12562.png) .
+### archivo sw:
+- ![image](https://user-images.githubusercontent.com/32855979/64140849-939b6280-cdcb-11e9-8f3f-2efe1b3e19ec.png) .
+- ![image](https://user-images.githubusercontent.com/32855979/64140980-0f95aa80-cdcc-11e9-9207-67212a84fd56.png) .
 # Typescript
 # Patrones de diseño
