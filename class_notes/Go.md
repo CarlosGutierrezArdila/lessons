@@ -13,3 +13,22 @@ call by reference, pasando un puntero como argumento
 de esta manera se altera el dato en esa direccion de memoria.  
 ## arrays y slices
 ![image](https://user-images.githubusercontent.com/32855979/66012456-e16bbf00-e48c-11e9-94ab-6b1fba32c6fb.png)
+## First class values
+tratar una funcion como un tipo, variables creadas dinamicamente para pasarse como argumentos y retornarse. 
+## Funciones como retorno
+![image](https://user-images.githubusercontent.com/32855979/67166943-f768f300-f359-11e9-8c2c-73e27c828438.png)
+## Variadic and deferred
+- definir una funcion con numero variable de argumentos:
+operador **...** . 
+![image](https://user-images.githubusercontent.com/32855979/67166990-7100e100-f35a-11e9-8e05-8247451102a8.png) 
+![image](https://user-images.githubusercontent.com/32855979/67167020-b4f3e600-f35a-11e9-8b48-43e1db5dc110.png) 
+- deferred functions: las funxiones no se llaman hasta que la funcion que las rodea termina su ejecucion: 
+los argumentos del defer se evaluan donde se define, no cuando se llama. 
+## clases y encapsulamiento
+- no hay palabra class en go, se usan receiver types: 
+![image](https://user-images.githubusercontent.com/32855979/67167237-11580500-f35d-11e9-8d90-1b5bb34d8c21.png) 
+## soporte para clases
+- los datos se exportan por medio de los metodos para encapsular los datos de un paquete, go maneja la exportacion con mayusculas
+
+
+
