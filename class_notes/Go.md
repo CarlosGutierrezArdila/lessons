@@ -20,15 +20,22 @@ tratar una funcion como un tipo, variables creadas dinamicamente para pasarse co
 ## Variadic and deferred
 - definir una funcion con numero variable de argumentos:
 operador **...** . 
-![image](https://user-images.githubusercontent.com/32855979/67166990-7100e100-f35a-11e9-8e05-8247451102a8.png) 
-![image](https://user-images.githubusercontent.com/32855979/67167020-b4f3e600-f35a-11e9-8b48-43e1db5dc110.png) 
+- ![image](https://user-images.githubusercontent.com/32855979/67166990-7100e100-f35a-11e9-8e05-8247451102a8.png) 
+- ![image](https://user-images.githubusercontent.com/32855979/67167020-b4f3e600-f35a-11e9-8b48-43e1db5dc110.png) 
 - deferred functions: las funxiones no se llaman hasta que la funcion que las rodea termina su ejecucion: 
 los argumentos del defer se evaluan donde se define, no cuando se llama. 
 ## clases y encapsulamiento
 - no hay palabra class en go, se usan receiver types: 
-![image](https://user-images.githubusercontent.com/32855979/67167237-11580500-f35d-11e9-8d90-1b5bb34d8c21.png) 
+- ![image](https://user-images.githubusercontent.com/32855979/67167237-11580500-f35d-11e9-8d90-1b5bb34d8c21.png) 
 ## soporte para clases
 - los datos se exportan por medio de los metodos para encapsular los datos de un paquete, go maneja la exportacion con mayusculas
+## interfaces
+- ![image](https://user-images.githubusercontent.com/32855979/67167827-7ca4d580-f363-11e9-8984-585ff8f1d56a.png)
+- ![image](https://user-images.githubusercontent.com/32855979/67169507-4bcb9d00-f371-11e9-9399-3312edbed207.png)
+- ![image](https://user-images.githubusercontent.com/32855979/67169554-91886580-f371-11e9-88a6-0537ffbec8dd.png)
+
+
+
 
 
 
